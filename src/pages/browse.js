@@ -1,5 +1,9 @@
 import React from "react";
+import { useContent } from "../hooks";
 
 export default function Browse() {
-  return <p>Hello from Browse</p>;
+  const { series } = useContent("series");
+  console.log("series", series);
+
+  return <p>Hello browse</p>;
 }
