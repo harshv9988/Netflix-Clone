@@ -24,7 +24,5 @@ export default function useContent(target) {
       });
   }, []);
 
-  console.log("content", content);
-  console.log("target", [target]);
   return { [target]: content };
 }
