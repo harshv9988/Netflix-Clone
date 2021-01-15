@@ -4,6 +4,7 @@ import { Link as ReachRouterLink } from "react-router-dom";
 export const Background = styled.div`
   display: flex;
   flex-direction: column;
+  box-sizing: border-box;
   background: linear-gradient(
       to bottom,
       rgba(0, 0, 0, 0.35),
@@ -24,6 +25,7 @@ export const Container = styled.div`
   display: flex;
   margin: 0 56px;
   height: 100px;
+  box-sizing: border-box;
   justify-content: space-between;
   align-items: center;
 
@@ -32,7 +34,7 @@ export const Container = styled.div`
   }
 
   @media (max-width: 1000px) {
-    margin: 0 30px;
+    margin: 0 20px;
   }
 `;
 
@@ -176,7 +178,7 @@ export const Dropdown = styled.div`
 export const Profile = styled.div`
   display: flex;
   align-items: center;
-  margin-left: 20px;
+  margin-left: 15px;
   position: relative;
 
   button {
@@ -225,6 +227,16 @@ export const Logo = styled.img`
   @media (min-width: 1449px) {
     height: 45px;
     width: 167px;
+  }
+
+  @media (max-width: 370px) {
+    margin-right: 30px;
+    width: 120px;
+  }
+
+  @media (max-width: 330px) {
+    margin-right: 30px;
+    width: 95px;
   }
 `;
 
