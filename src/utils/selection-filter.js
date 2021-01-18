@@ -29,19 +29,19 @@ export default function selectionFilter({ series, films }) {
       },
       {
         title: "Thriller",
-        data: series.filter((item) => item.genre === "thriller"),
+        data: films.filter((item) => item.genre === "thriller"),
       },
       {
         title: "Children",
-        data: series.filter((item) => item.genre === "children"),
+        data: films.filter((item) => item.genre === "children"),
       },
       {
         title: "Suspense",
-        data: series.filter((item) => item.genre === "suspense"),
+        data: films.filter((item) => item.genre === "suspense"),
       },
       {
         title: "Romance",
-        data: series.filter((item) => item.genre === "romance"),
+        data: films.filter((item) => item.genre === "romance"),
       },
     ],
   };
