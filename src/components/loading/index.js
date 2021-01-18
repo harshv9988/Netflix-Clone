@@ -3,10 +3,12 @@ import { Spinner, Picture, LockBody, ReleaseBody } from "./styles/loading";
 
 export default function Loading({ src, ...restprops }) {
   return (
-    <Spinner>
+    <>
       <LockBody />
-      <Picture src={`/images/users/${src}.png`} />
-    </Spinner>
+      <Spinner>
+        <Picture src={`/images/users/${src}.png`} />
+      </Spinner>
+    </>
   );
 }
 
